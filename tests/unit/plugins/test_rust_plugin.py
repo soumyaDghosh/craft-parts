@@ -50,6 +50,7 @@ def test_get_build_packages(part_info):
         "git",
         "pkg-config",
         "findutils",
+        "libssl-dev",
     }
 
 

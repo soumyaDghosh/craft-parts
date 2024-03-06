@@ -200,7 +200,7 @@ class RustPlugin(Plugin):
     @override
     def get_build_packages(self) -> Set[str]:
         """Return a set of required packages to install in the build environment."""
-        return {"curl", "gcc", "git", "pkg-config", "findutils"}
+        return {"curl", "gcc", "git", "pkg-config", "findutils", "libssl-dev"}
 
     def _check_system_rust(self) -> bool:
         """Check if Rust is installed on the system."""
